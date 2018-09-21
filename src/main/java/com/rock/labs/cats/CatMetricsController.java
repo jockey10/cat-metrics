@@ -1,14 +1,13 @@
 package com.rock.labs.cats;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class CatMetricsController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "Meow!";
+    @RequestMapping(value="/")
+    public String home() {
+        return "home";
     }
-
 }
